@@ -25,15 +25,20 @@ Either using `ctest`:
 ```
 $ cd build
 $ ctest
-
 Running tests...
-Test project /home/user/gtest-demo/build
-    Start 1: unit
-1/1 Test #1: unit .............................   Passed    0.00 sec
+Test project /home/mistu/azahar/my/git/gtest-demo/build
+    Start 1: test_calculations.FactorialOfZeroShouldBeOne
+1/2 Test #1: test_calculations.FactorialOfZeroShouldBeOne ...   Passed    0.00 sec
+    Start 2: test_calculations.FactorialOfPositiveNos
+2/2 Test #2: test_calculations.FactorialOfPositiveNos .......   Passed    0.00 sec
 
-100% tests passed, 0 tests failed out of 1
+100% tests passed, 0 tests failed out of 2
 
-Total Test time (real) =   0.00 sec
+Label Time Summary:
+unit    =   0.01 sec*proc (2 tests)
+
+Total Test time (real) =   0.01 sec
+
 ```
 
 Or directly using `unit_tests`:
@@ -41,17 +46,18 @@ Or directly using `unit_tests`:
 $ cd build 
 $ ./bin/unit_tests
 
-[==========] Running 2 tests from 1 test case.
+Running main() from /home/mistu/azahar/my/git/gtest-demo/build/_deps/gtest-src/googletest/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 2 tests from example
-[ RUN      ] example.add
-[       OK ] example.add (0 ms)
-[ RUN      ] example.subtract
-[       OK ] example.subtract (0 ms)
-[----------] 2 tests from example (1 ms total)
+[----------] 2 tests from test_calculations
+[ RUN      ] test_calculations.FactorialOfZeroShouldBeOne
+[       OK ] test_calculations.FactorialOfZeroShouldBeOne (0 ms)
+[ RUN      ] test_calculations.FactorialOfPositiveNos
+[       OK ] test_calculations.FactorialOfPositiveNos (0 ms)
+[----------] 2 tests from test_calculations (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 2 tests from 1 test case ran. (1 ms total)
+[==========] 2 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 2 tests.
 
 ```
