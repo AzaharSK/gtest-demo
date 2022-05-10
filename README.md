@@ -1,17 +1,7 @@
-[![Build Status](https://github.com/bast/gtest-demo/actions/workflows/test.yml/badge.svg)](https://github.com/bast/gtest-demo/actions/workflows/test.yml)
-[![Coverage Status](https://coveralls.io/repos/bast/gtest-demo/badge.png?branch=master)](https://coveralls.io/r/bast/gtest-demo?branch=master)
-[![License](https://img.shields.io/badge/license-%20BSD--3-blue.svg)](../master/LICENSE)
-
-
 # gtest-demo
 
 C/C++ unit test demo using [Google Test](https://code.google.com/p/googletest)
-with continuous integration provided by [GitHub
-Actions](https://docs.github.com/en/actions) and test coverage deployed to
-[Coveralls](https://coveralls.io/r/bast/gtest-demo).
 
-- [Build and test history](https://github.com/bast/gtest-demo/actions)
-- [Code coverage](https://coveralls.io/r/bast/gtest-demo)
 - Licensed under [BSD-3](../master/LICENSE)
 
 
@@ -23,7 +13,11 @@ cd gtest-demo
 cmake -S. -Bbuild 
 cmake --build build
 ```
-
+## Running the App
+```
+./build/bin/FactApp 
+Factorial of 5 is 120
+```
 
 ## Running the tests
 
@@ -61,10 +55,18 @@ $ ./bin/unit_tests
 [  PASSED  ] 2 tests.
 
 ```
+##  Export the results to output.xml:
+```
+$ ./bin/unit_tests --gtest_output=xml:output.xml
+```
+Let's load this output.xml into 
+https://codebeautify.org/xmlviewer/46c9c8#
 
 
-## Acknowledgments
 
-- Container Travis setup thanks to [Joan Massich](https://github.com/massich).
-- Clean-up in CMake code thanks to [Claus Klein](https://github.com/ClausKlein).
-- Clean-up and GitHub Actions workflow: [Roberto Di Remigio](https://github.com/robertodr).
+
+## Acknowledgments & References
+https://github.com/bast/gtest-demo
+https://www.geeksforgeeks.org/gtest-framework/
+
+
