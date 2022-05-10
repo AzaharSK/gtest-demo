@@ -26,7 +26,7 @@ Either using `ctest`:
 $ cd build
 $ ctest
 Running tests...
-Test project /home/mistu/azahar/my/git/gtest-demo/build
+Test project /home/user/gtest-demo/build
     Start 1: test_calculations.FactorialOfZeroShouldBeOne
 1/2 Test #1: test_calculations.FactorialOfZeroShouldBeOne ...   Passed    0.00 sec
     Start 2: test_calculations.FactorialOfPositiveNos
@@ -46,7 +46,7 @@ Or directly using `unit_tests`:
 $ cd build 
 $ ./bin/unit_tests
 
-Running main() from /home/mistu/azahar/my/git/gtest-demo/build/_deps/gtest-src/googletest/src/gtest_main.cc
+Running main() from /home/user/gtest-demo/build/_deps/gtest-src/googletest/src/gtest_main.cc
 [==========] Running 2 tests from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 2 tests from test_calculations
