@@ -72,8 +72,7 @@ https://codebeautify.org/xmlviewer/46c9c8#
 
 
 ## Acknowledgments & References
-```
-https://github.com/bast/gtest-demo
-https://www.geeksforgeeks.org/gtest-framework/
-```
+
+https://github.com/bast/gtest-demo .
+https://www.geeksforgeeks.org/gtest-framework/ .
 
