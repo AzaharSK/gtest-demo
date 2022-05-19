@@ -1,1 +1,1 @@
-unsigned int factorial(unsigned int n);
+int factorial(int n);

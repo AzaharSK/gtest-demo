@@ -1,7 +1,7 @@
 #include "Factorial.hpp"
 
 // function to find factorial of given number
-unsigned int factorial(unsigned int n)
+int factorial(int n)
 {
     if (n == 0)
         return 1;

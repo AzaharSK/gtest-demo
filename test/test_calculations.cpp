@@ -9,9 +9,9 @@ TEST(test_calculations, FactorialOfZeroShouldBeOne)
 
 TEST(test_calculations, FactorialOfNegativeShouldBeMinusOne)
 {
-    ASSERT_EQ(-1, factorial(-5));
-    ASSERT_EQ(-1, factorial(-1));
-    ASSERT_EQ(-1, factorial(-45));
+    EXPECT_EQ(-1, factorial(-5));
+    EXPECT_EQ(-1, factorial(-1));
+    EXPECT_EQ(-1, factorial(-45));
 }
 
 TEST(test_calculations, FactorialOfPositiveNos)
