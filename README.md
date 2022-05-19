@@ -8,7 +8,7 @@ C/C++ unit test demo using [Google Test](https://code.google.com/p/googletest)
 ## How to build this demo
 
 ```bash
-git clone https://github.com/bast/gtest-demo.git
+git clone https://github.com/AzaharSK/gtest-demo.git
 cd gtest-demo
 cmake -S. -Bbuild 
 cmake --build build
