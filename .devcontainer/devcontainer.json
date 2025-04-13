@@ -1,0 +1,25 @@
+{
+  "name": "C++ Factorial App",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  // where VS Code will open your project
+  "workspaceFolder": "/workspace",
+  "settings": {
+    // auto-run CMake configure when folder opens
+    "cmake.configureOnOpen": true,
+    // use the CMake Tools extension as the IntelliSense provider
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools",
+    "twxs.cmake"             // optional CMake syntax helpers
+  ],
+  // user inside container
+  "remoteUser": "vscode",
+  // after container is created, configure your build directory
+  "postCreateCommand": "cmake -S . -B build"
+}
+

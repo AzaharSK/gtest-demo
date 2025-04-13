@@ -6,6 +6,8 @@ project(gtest-demo LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+# suppress just the maybe-uninitialized warning (GCC/Clang)
+add_compile_options(-Wno-error=maybe-uninitialized)
 
 # place binaries and libraries according to GNU standards
 include(GNUInstallDirs)
