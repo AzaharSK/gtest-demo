@@ -10,6 +10,10 @@ C/C++ unit test demo using [Google Test](https://code.google.com/p/googletest)
 ```bash
 git clone https://github.com/AzaharSK/gtest-demo.git
 cd gtest-demo
+code .
+![image](https://github.com/user-attachments/assets/c02c2944-e33e-4522-a33d-90203944de15)
+
+
 cmake -S. -Bbuild 
 cmake --build build
 ```
